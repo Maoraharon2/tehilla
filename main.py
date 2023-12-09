@@ -154,6 +154,9 @@ def make_button_key():
 def main():
     bot = Bot()
     st.title('התהילבוט')
+    user_name = st.user_info._get_user_info()["email"].split("@")[0]
+    st.write(f"ברוך הבא,  {user_name}")
+         
     tab1, tab2, tab3, tab4 = st.tabs(["הקדמה", "שאל את המומחה", "תמונות של הטמבלית", "תלמדו על תהילה"])
 
     with tab1:
