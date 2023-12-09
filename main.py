@@ -116,7 +116,7 @@ def pics_tab():
     random.shuffle(image_files)
     for image_file in image_files:
         image_path = os.path.join(directory, image_file)
-        st.image(image_path, caption=image_file, width=300)
+        st.image(image_path, caption=image_file, width=350)
         # todo: change pics names - affect the captions
 
 
