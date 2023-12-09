@@ -122,7 +122,8 @@ def pics_tab():
 
 # tab 4:
 def get_random_pic():
-    directory = "funny_pics/"
+    available_dirs = ["funny_pics/", "sleep_pics/", "tehilla_pics/"]
+    directory = random.choice(available_dirs)
     image_files = [f for f in os.listdir(directory)]
     image_file = random.choice(image_files)
     image_path = os.path.join(directory, image_file)
